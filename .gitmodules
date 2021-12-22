@@ -1,0 +1,3 @@
+[submodule "lhotse"]
+	path = lhotse
+	url = git@github.com:lhotse-speech/lhotse.git
