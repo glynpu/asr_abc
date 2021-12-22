@@ -1,1 +1,8 @@
+torch
+torchaudio
+sentencepiece
 huggingface_hub
+numpy
+intervaltree
+lilcom
+cytoolz

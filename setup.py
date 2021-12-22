@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
 
-# from distutils.command.sdist import sdist
+import os
 from setuptools import find_packages, setup
 from setuptools.command.install import install
-import subprocess
 from pathlib import Path
 
-repo_root_dir = Path(__file__).parent
-install_requires = (repo_root_dir / "requirements.txt").read_text().splitlines()
+repo_root = Path(__file__).parent
+install_requires = (repo_root / "requirements.txt").read_text().splitlines()
+
 
 class submodule(install):
     def run(self):
-        # self.spawn(["git submodule init; git submodule update"])
-        # self.spawn(['ls', '-l'])
-        print("hello***************")
-        subprocess.call(["ls", "-l"])
         install.run(self)
+        os.system("git submodule init; git submodule update")
+
 
 setup(
     name="asr_abc",
@@ -26,8 +24,8 @@ setup(
     license="Apache-2.0 License",
     packages=find_packages(),
     install_requires=install_requires,
-    cmdclass = {
-        'install':submodule,
+    cmdclass={
+        "install": submodule,
     },
     classifiers=[
         "Development Status :: 3 - Alpha",
