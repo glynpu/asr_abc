@@ -74,7 +74,7 @@ https://huggingface.co/GuoLiyong/cn_conformer_encoder_aishell/tree/main/data/lan
 提取码: qa4p
 ```
 
-对于访问下载源1有困难活着访问速度过慢的同学，可以手动从百度网盘下载.
+对于访问下载源1有困难或者访问速度过慢的同学，可以手动从百度网盘下载.
 下载完毕后按以下文件结构放置下载所得的"tokens.txt"和"conformer_encoder.pt"两个文件：
 
 ```
