@@ -52,6 +52,15 @@ python decode.py -i=data/wavs/ks1_16k.wav  # ks is short for "Kantanzhe Song"
 2021-12-27 19:16:08,450 INFO [decode.py:138] done.
 ```
 
+## 相关项目链接：
+
+```
+https://github.com/k2-fsa/icefall
+https://github.com/k2-fsa/k2
+https://github.com/lhotse-speech/lhotse
+```
+
+
 ## 手动模型下载
 
 如果上述`python decode.py` 已识别出预期结果，说明模型已自动从下载源1成功下载模型，无需关注以下内容。
@@ -83,8 +92,9 @@ https://huggingface.co/GuoLiyong/cn_conformer_encoder_aishell/tree/main/data/lan
 |       `-- transcript
 |-- decode.py
 |-- exp
-|   `-- pretrained.pt
+|   `-- conformer_encoder.pt
 |-- requirements.txt
 |-- setup.py
 `-- utils.py
 ```
+
